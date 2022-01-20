@@ -5,6 +5,7 @@ const cors = require('cors')
 
 const sequelize = require('./db')
 const router = require('./router/index')
+const models = require('./models/models')
 const ErrorHandler = require('./middleware/ErrorHandlingMiddleware')
 
 const PORT = process.env.PORT || 8080

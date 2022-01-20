@@ -1,11 +1,9 @@
 const Router = require('express')
 
+const userRouter = require('./userRouter')
+
 const router = new Router()
 
-router.use('/', (req, res) => {
-    res.status(200).json({
-        message: 'All worked!'
-    })
-})
+router.use('/user', userRouter)
 
 module.exports = router
