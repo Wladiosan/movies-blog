@@ -53,9 +53,10 @@ class MovieController {
     }
 
     async getById(req, res, next) {
-
+        const {id} = req.params
+        const movie = await Movies.findOne({where: {id}})
+        return res.status(200).json({movie})
     }
-
 }
 
 module.exports = new MovieController()
