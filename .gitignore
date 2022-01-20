@@ -106,3 +106,5 @@ dist
 ./server/node_modules
 ./server/.idea
 /.DS_Store
+/client/.vscode
+
