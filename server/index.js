@@ -13,7 +13,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-app.use('/api', router)
+app.use('/api/v1', router)
 
 // Error handler. Should be the last line!
 app.use(ErrorHandler)

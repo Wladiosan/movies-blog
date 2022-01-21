@@ -10,3 +10,9 @@ module.exports = new Sequelize(
         port: process.env.DB_PORT
     }
 )
+
+/*
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: 'path/to/database.sqlite'
+})*/
